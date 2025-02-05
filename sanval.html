@@ -33,6 +33,7 @@
             text-decoration: none;
             font-size: 16px;
             font-weight: bold;
+            cursor: pointer;
         }
         .section {
             display: none;
@@ -73,10 +74,6 @@
             cursor: pointer;
         }
     </style>
-</head>
-<body>
-    
-
     <script>
         function showSection(sectionId) {
             var sections = document.querySelectorAll('.section');
@@ -87,20 +84,18 @@
 </head>
 <body>
     <nav class="nav-menu">
-        <a href="#" onclick="showSection('dedicatoria')">Dedicatoria</a>
-        <a href="#" onclick="showSection('mensajes')">Mensajes</a>
-        <a href="#" onclick="showSection('galeria')">Galería</a>
-        <a href="#" onclick="showSection('final')">Final</a>
+        <a onclick="showSection('dedicatoria')">Dedicatoria</a>
+        <a onclick="showSection('mensajes')">Mensajes</a>
+        <a onclick="showSection('galeria')">Galería</a>
+        <a onclick="showSection('final')">Final</a>
     </nav>
 
-    div class="container">
     <section id="dedicatoria" class="section active">
         <h2>Para ti, mi amor</h2>
         <p>Hoy quiero recordarte lo mucho que te amo y lo especial que eres para mí.</p>
         <p>Hemos pasado mucho tiempo juntos y quiero que así sea toda la vida, por eso creé este espacio donde siempre podrás acudir y recordar cuánto te amo.</p>
         <p>Desde el primer día que te conocí, supe que quería compartir cada momento especial contigo. Así que hoy, quiero preguntarte…</p>
         <p><strong>¿Me darías el honor de ser mi San Valentín?</strong></p>
-        
         <div class="encuesta">
             <p>Encuesta rápida:</p>
             <button onclick="alert('Sabía que dirías que sí ❤️')">✅ Sí, quiero ser tu San Valentín</button>
@@ -108,110 +103,38 @@
             <button onclick="alert('Jaja, sabía que responderías eso 😍')">✅ Obvio, qué pregunta tan innecesaria</button>
         </div>
     </section>
-</div>
-        
-        <section id="mensajes" class="section">
-            <h2>Tus daily remember Amor</h2>
-            <p>  <br>
-                <p>  <br>
-                    <p>  <br>
-                        <p>  <br>
-            <p>"Yo si haria todo por comprarte esa mansion en las canarias."<br>
-                <p>  <br>
-                    <p>  <br>
-                        <p>  <br>
-                            <p>  <br>
-                <p>"444"<br>
-            <p>  <br>
-                <p>  <br>
-                    <p>  <br>
-                        <p>  <br>
-            <p>"Ese primer abrazo siempre sera mi recuerdo favorito."<br>    
-                <p>  <br>
-                    <p>  <br>
-                        <p>  <br>
-                            <p>  <br>
-                <p>"Amo ser parte de tu vida."<br>
-                <p>  <br>
-                    <p>  <br>
-                        <p>  <br>
-                            <p>  <br>
-                <p>"Amo construinos nuestra vida*"<br>                <p>  <br>
-                    <p>  <br>
-                        <p>  <br>
-                            <p>  <br>
-                                <p>  <br>
-                <p>"D + M"<br>
-                <p>  <br>
-                    <p>  <br>
-                        <p>  <br>
-                            <p>  <br>
-                                <p>  <br>
-                <p>"Eres mi todo, la razón por la que sonrío cada día."<br> 
-                    <p>  <br>
-                        <p>  <br>
-                            <p>  <br>
-                                <p>  <br>
-                                    <p>  <br>
-                    <p>"=}"<br> 
-                        <p>  <br>
-                            <p>  <br>
-                                <p>  <br>
-                                    <p>  <br>
-                <p>"Quiero despertar contigo todos los dias de mi vida"<br>
-                                <p>  <br>
-                                    <p>  <br>
-                                        <p>  <br>  
-                                            <p>  <br>                                       
-                <p>"Quiero despertar contigo todos los dias de mi vida"<br>
-                    <p>  <br>
-                        <p>  <br>
-                            <p>  <br>  
-                                <p>  <br>
-                <p>"Me dan ganas de cicinarte pasta todos los dias"<br>
-                                        <p>  <br>
-                                            <p>  <br>
-                                                <p>  <br>  
-                                                    <p>  <br>
-                <p>"Me dan ganas de cicinarte pasta todos los dias"<br>
-                                                            <p>  <br>
-                                                                <p>  <br>
-                                                                    <p>  <br>  
-                                                                        <p>  <br>
-                          
-        </section>
-        
-        <section id="galeria" class="section">
-            <h2>Galería de Recuerdos</h2>
-            <p>Aquí pondría nuestras fotos más hermosas juntos.</p>
-            <div class="image-container">
-                <img src="foto 1.jpg" alt="Recuerdo 1">
-                <img src="foto 2.jpg" alt="Recuerdo 2">
-                <img src="foto 3.jpg" alt="Recuerdo 3">
-            </div>
-        </section>
-        
-        <section id="final" class="section">
-            <h2>Siempre Juntos</h2>
-            <p>  <br>
-            <h1>Aqui subire todo lo bonito que me has inspiraado a hacer</h1>
-            <p>  <br>
-                <p>  <br>
-            <p>¿Por que te Amo?<br>
-                <div class="image-container">
-       <img src="Cartita_4u.pdf[1]-Copy_page-0001.jpg" alt="carta 1">
-       <img src="Cartita_4u.pdf[1]-Copy_page-0002.jpg" alt="carta 1">
-    </div>
-            </p>
-        </section>
-    </div>
 
-    <script>
-        function showSection(sectionId) {
-            var sections = document.querySelectorAll('.section');
-            sections.forEach(section => section.classList.remove('active'));
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
+    <section id="mensajes" class="section">
+        <h2>Tus daily remember Amor</h2>
+        <p>"Yo sí haría todo por comprarte esa mansión en las Canarias."</p>
+        <p>"444"</p>
+        <p>"Ese primer abrazo siempre será mi recuerdo favorito."</p>
+        <p>"Amo ser parte de tu vida."</p>
+        <p>"Amo construir nuestra vida."</p>
+        <p>"D + M"</p>
+        <p>"Eres mi todo, la razón por la que sonrío cada día."</p>
+        <p>"=}"</p>
+        <p>"Quiero despertar contigo todos los días de mi vida."</p>
+        <p>"Me dan ganas de cocinarte pasta todos los días."</p>
+    </section>
+
+    <section id="galeria" class="section">
+        <h2>Galería de Recuerdos</h2>
+        <p>Aquí pondría nuestras fotos más hermosas juntos.</p>
+        <div class="image-container">
+            <img src="foto1.jpg" alt="Recuerdo 1">
+            <img src="foto2.jpg" alt="Recuerdo 2">
+            <img src="foto3.jpg" alt="Recuerdo 3">
+        </div>
+    </section>
+
+    <section id="final" class="section">
+        <h2>Siempre Juntos</h2>
+        <p>Aquí subiré todo lo bonito que me has inspirado a hacer.</p>
+        <h3>¿Por qué te amo?</h3>
+        <div class="image-container">
+            <a href="Cartita_4u.pdf" target="_blank">Ver Carta</a>
+        </div>
+    </section>
 </body>
 </html>
